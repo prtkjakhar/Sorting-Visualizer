@@ -1,10 +1,6 @@
-
-//Variables (BE CAREFUL THESE MIGHT BE USED IN OTHER JS FILES TOO)
-var inp_as=document.getElementById('a_size'),array_size=inp_as.value;
+var inp_as=document.getElementById('a_size'), array_size=inp_as.value;
 var inp_gen=document.getElementById("a_generate");
 var inp_aspeed=document.getElementById("a_speed");
-//var array_speed=document.getElementById('a_speed').value;
-
 var butts_algos=document.querySelectorAll(".algos button");
 
 var div_sizes=[];
@@ -67,16 +63,12 @@ function runalgo()
     switch(this.innerHTML)
     {
         case "Bubble":Bubble();
-                        break;
-        case "Selection":Selection_sort();
-                        break;
+            break;
         case "Insertion":Insertion();
-                        break;
+            break;
         case "Merge":Merge();
-                        break;
+            break;
         case "Quick":Quick();
-                        break;
-        case "Heap":Heap();
-                        break;
+            break;
     }
 }
